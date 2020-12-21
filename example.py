@@ -14,3 +14,12 @@ print(B[foo(2), bar(3)])
 print(3 + B)
 print(A + B)
 print(A[foo(2)])
+
+
+ndot = lambda _: None
+nfunsoftmax = lambda _: None
+
+def Att(Q: (key,), K: (seq, key), V: (val,)) -> (val,):
+    return ndot(seq, softmax(seq, ndot(key, Q, K) / math.sqrt(abs(key))), V)
+
+print(get_latex(Att))

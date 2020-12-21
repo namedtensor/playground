@@ -20,7 +20,7 @@ def lat_nfun(n, f):
 FUNCTIONS = {
     "ndot": ("bin", lambda ax: lat_nbin(ax, r"\boldsymbol\cdot")),
     "sum": ("contraction", lambda ax: r"\sum\limits_{%s}" % lat_name(ax)),
-    #    "softmax" : ("function", lambda ax: lat_nfun(ax, "softmax"))
+    "softmax" : ("function", lambda ax: lat_nfun(ax, "softmax"))
 }
 
 MATH_SYMBOLS = {
